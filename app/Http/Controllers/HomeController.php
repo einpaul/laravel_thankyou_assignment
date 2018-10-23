@@ -35,8 +35,7 @@ class HomeController extends Controller
 
         $user = Auth::user();
         $posts = $user->posts;
-        dd($posts);
 
-        return view('profile', ['users' =>  $users]);
+        return view('profile', ['posts' =>  $posts]);
     }
 }
