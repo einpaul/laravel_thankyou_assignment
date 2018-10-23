@@ -14,8 +14,10 @@
                             </div>
                         @endif
 
-                        Your About page {{ $users }}!
-                    </div>
+                        Your About page
+                                @foreach( $users as $user )
+                                    <p>This is user {{ $user -> name}}</p>
+                    </div>      @endforeach
                 </div>
             </div>
         </div>
