@@ -16,7 +16,7 @@
 
                         Your About page
                                 @foreach( $users as $user )
-                                    <p>This is user {{ $user -> name}}</p>
+                                    <p>This is user {{ $user -> name . ' ID: ' . $user->id}}</p>
                     </div>      @endforeach
                 </div>
             </div>
